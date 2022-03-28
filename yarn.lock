@@ -658,10 +658,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@shihengtech/hooks@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.nlark.com/@shihengtech/hooks/download/@shihengtech/hooks-0.0.7.tgz#24fb7377363a9b8ba225568587559f145602ccfb"
-  integrity sha1-JPtzdzY6m4uiJVaFh1WfFFYCzPs=
+"@shihengtech/hooks@^0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@shihengtech/hooks/-/hooks-0.0.16.tgz#2351fbabe779695c8f7d4b6dac5fcb8d9865e004"
+  integrity sha512-Xoh9xkaGeyCuCC1h4u/GcAINDyLZ9VspZ/lP7E/XNzO1bk6DokrhjWGxJ3WARm9O4aYxIMtGiWy7tiSfERWmEA==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.8"
