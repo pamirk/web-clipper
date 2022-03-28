@@ -61,6 +61,10 @@ module.exports = {
       extensions: resolve('src/extensions/'),
     },
     extensions: ['.ts', '.tsx', '.js', 'less'],
+    fallback: {
+      path: require.resolve('path-browserify'),
+      url: false,
+    },
   },
   module: {
     rules: [
@@ -111,32 +115,9 @@ module.exports = {
           },
         ],
       },
+      //  less
       {
         test: /\.less$/,
-        include: /node_modules\/antd|@ant-design|@formily/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-          },
-          {
-            loader: 'less-loader',
-            options: {
-              lessOptions: {
-                modifyVars: {
-                  '@body-background': 'transparent',
-                },
-                javascriptEnabled: true,
-              },
-            },
-          },
-        ],
-      },
-      {
-        test: /\.less$/,
-        exclude: /node_modules/,
         use: [
           {
             loader: 'style-loader',
