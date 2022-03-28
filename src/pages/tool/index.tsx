@@ -26,6 +26,7 @@ import { IContentScriptService } from '@/service/common/contentScript';
 import { IExtensionService, IExtensionContainer } from '@/service/common/extension';
 import { IExtensionWithId, InitContext } from '@/extensions/common';
 import usePowerpack from '@/common/hooks/usePowerpack';
+import Hello from 'components/Hello';
 
 const mapStateToProps = ({
   clipper: {

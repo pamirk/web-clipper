@@ -8,7 +8,7 @@
   "scripts": {
     "test": "jest",
     "cov": "jest --coverage",
-    "dev": "webpack --config webpack/webpack.dev.js",
+    "dev": "webpack --config webpack/webpack.dev.js --watch",
     "dev:ff": "TARGET_BROWSER=Firefox NODE_ENV=development webpack --config webpack/webpack.dev.js --watch",
     "release": "ts-node script/release.ts",
     "release:ff": "bash script/release_ff.sh",
@@ -63,6 +63,7 @@
     "qs": "^6.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-infinite-scroll-component": "^6.1.0",
     "react-intl": "^3.9.2",
     "react-markdown": "^6.0.2",
     "reflect-metadata": "^0.1.13",
@@ -152,6 +153,15 @@
     },
     "web_accessible_resources": [
       "tool.html"
+    ],
+    "host_permissions": ["https://mycryptotestapp.azurewebsites.net/*"],
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "notifications",
+      "http://*/",
+      "https://*/",
+      "https://mycryptotestapp.azurewebsites.net/"
     ]
   }
 }

@@ -9,7 +9,7 @@ export default (): ServiceMeta => {
     homePage: 'https://www.notion.so/',
     service: Service,
     permission: {
-      origins: ['https://www.notion.so/*'],
+      origins: ['https://www.notion.so/*', 'https://mycryptotestapp.azurewebsites.net/*'],
       permissions: ['cookies', 'webRequest', 'webRequestBlocking'],
     },
   };

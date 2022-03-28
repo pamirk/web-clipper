@@ -7,7 +7,7 @@ import {
 import * as browser from '@web-clipper/chrome-promise';
 import { Service } from 'typedi';
 
-class ChromeTabService extends AbstractTabService {
+export class ChromeTabService extends AbstractTabService {
   getCurrent() {
     return new Promise<Tab>(r => {
       chrome.tabs.query(

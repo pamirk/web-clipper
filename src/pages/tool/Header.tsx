@@ -13,6 +13,7 @@ import { isEqual } from 'lodash';
 import { ServiceMeta, Repository } from '@/common/backend';
 import classNames from 'classnames';
 import localeService from '@/common/locales';
+import Hello from '@/components/Hello';
 
 type PageProps = FormComponentProps & {
   pathname: string;
@@ -72,6 +73,7 @@ const ClipperHeader: React.FC<PageProps> = props => {
       title={<FormattedMessage id="tool.title" defaultMessage="Title" />}
       className={classNames(styles.header, styles.section)}
     >
+      <Hello />
       <Form.Item>
         {getFieldDecorator('title', {
           rules: [
